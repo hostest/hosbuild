@@ -1,5 +1,11 @@
+SPWD="`pwd`"
+ME="`dirname \"$0\"`"              # relative
+ME="`( cd \"$MY_PATH\" && pwd )`"  # absolutized and normalized
+ROOT_DIR="`( cd .. && pwd )`"
+
 WORK_DIR="${ROOT_DIR}/work"
 FREEBSD_SRC="${ROOT_DIR}/src/freebsd"
+FREEBSD_SRC_GIT="https://github.com/trueos/freebsd"
 FILES_DIR="${ROOT_DIR}/files"
 DIST_FILES_DIR="${FILES_DIR}/dist"
 BIN_DIR="${ROOT_DIR}/bin"
