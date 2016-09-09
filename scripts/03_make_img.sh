@@ -7,7 +7,7 @@ ROOT_DIR="`( cd .. && pwd )`"
 
 . $ME/functions.sh
 
-MD_NUM=7
+MD_NUM=5
 
 truncate -s 3G $SYS_DISK_RAW_IMAGE
 

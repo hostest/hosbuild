@@ -9,7 +9,8 @@ ROOT_DIR="`( cd .. && pwd )`"
 
 echo ">>>=== Creating fresh image ===================="
 mkdir $SYS_DIR
-#rm -rf $SYS_DIR/*
+rm -rf $SYS_DIR/*
+tar -vxjf $FRESH_DISTRIBUTION -C $SYS_DIR
 
 #cp -a $RELEASE_DIR/ $SYS_DIR/
 
